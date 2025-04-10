@@ -52,39 +52,6 @@ def Create_kinetc_signal(matrix_with_k, time, t_0, time_before_zero):
         
     return z
 
-
-"""
-//////////////////////////////////////////////////
-/// Generate Spectra for each spectral component ////
-//////////////////////////////////////////////////
-
-"""
-
-def Spectra_generator(N_real_states):
-
-    wl = np.arange(0, 256, 1)
-    N_Gaus = 8;
-    wl_signal = np.zeros((len(wl), N_real_states))
-
-    for i in range (N_real_states - 1):
-            
-        for j in range(np.random.randint(1,N_Gaus)):
-            
-            if j == 0:
-                amp = np.random.randint(4,10)
-            
-            else:
-                amp = np.random.randint(2,10)
-
-            sigma = np.random.randint(3,26)
-            w0 = 2*np.random.randint(1, 128)
-            wl_signal[:,i] = wl_signal[:,i] + amp*np.exp(-0.5*((wl-w0)/sigma)**2)                
-        
-        wl_signal[:,i] = wl_signal[:,i]
-
-    return wl_signal / np.max(wl_signal)
-
-
 """
 ////////////////////////////////////////////////////////
 /// associate to each pathway the kinetic rate constant, ////
