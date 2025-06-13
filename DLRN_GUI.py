@@ -108,85 +108,85 @@ class MyWindow(QMainWindow):
         if selected_option == "Spectra emission":
 
             try:
-                path_model = path + "/pretrained_model/Spectra_emission/resV2_spectra_model"
+                path_model = path + "/pretrained_model_Spectra/pretrained_model_Spectra/resV2_spectra_model"
                 model_model = tf.keras.models.load_model(path_model, custom_objects={'top_3_acc':top_3_acc})
                 self.model_model = model_model
 
-                path_amp = path + "/pretrained_model/Spectra_emission/resV2_spectra_amplitude" # 
+                path_amp = path + "/pretrained_model_Spectra/pretrained_model_Spectra/resV2_spectra_amplitude" # 
                 model_amp = tf.keras.models.load_model(path_amp)
                 self.model_amp = model_amp
 
-                path_tau = path + "/pretrained_model/Spectra_emission/resV2_spectra_Tau"
+                path_tau = path + "/pretrained_model_Spectra/pretrained_model_Spectra/resV2_spectra_Tau"
                 model_tau = tf.keras.models.load_model(path_tau)
                 self.model_tau = model_tau
 
             except:
-                path_model = path + "/pretrained_model/pretrained_model/Spectra_emission/resV2_spectra_model"
+                path_model = path + "/pretrained_model_Spectra/resV2_spectra_model"
                 model_model = tf.keras.models.load_model(path_model, custom_objects={'top_3_acc':top_3_acc})
                 self.model_model = model_model
 
-                path_amp = path + "/pretrained_model/Spectra_emission/resV2_spectra_amplitude" # 
+                path_amp = path + "/pretrained_model_Spectra/resV2_spectra_amplitude" # 
                 model_amp = tf.keras.models.load_model(path_amp)
                 self.model_amp = model_amp
 
-                path_tau = path + "pretrained_model/pretrained_model/Spectra_emission/resV2_spectra_Tau"
+                path_tau = path + "/pretrained_model_Spectra/resV2_spectra_Tau"
                 model_tau = tf.keras.models.load_model(path_tau)
                 self.model_tau = model_tau
 
         if selected_option == "Spectra TA":
 
             try:
-                path_model = path + "/pretrained_model/Spectra_TA/resV2_TA_spectra_Model"
+                path_model = path + "/pretrained_model_TA/resV2_TA_spectra_Model"
                 model_model = tf.keras.models.load_model(path_model, custom_objects={'top_3_acc':top_3_acc})
                 self.model_model = model_model
 
-                path_amp = path + "/pretrained_model/Spectra_TA/resV2_TA_spectra_Amplitude" # 
+                path_amp = path + "/pretrained_model_TA/resV2_TA_spectra_Amplitude" # 
                 model_amp = tf.keras.models.load_model(path_amp)
                 self.model_amp = model_amp
 
-                path_tau = path + "/pretrained_model/Spectra_TA/resV2_TA_spectra_cosh_Tau"
+                path_tau = path + "/pretrained_model_TA/resV2_TA_spectra_cosh_Tau"
                 model_tau = tf.keras.models.load_model(path_tau)
                 self.model_tau = model_tau
 
             except:
-                path_model = path + "/pretrained_model/pretrained_model/Spectra_TA/resV2_TA_spectra_Model"
+                path_model = path + "/pretrained_model_TA/pretrained_model_TA/resV2_TA_spectra_Model"
                 model_model = tf.keras.models.load_model(path_model, custom_objects={'top_3_acc':top_3_acc})
                 self.model_model = model_model
 
-                path_amp = path + "pretrained_model/pretrained_model/Spectra_TA/resV2_TA_spectra_Amplitude" # 
+                path_amp = path + "/pretrained_model_TA/pretrained_model_TA/resV2_TA_spectra_Amplitude" # 
                 model_amp = tf.keras.models.load_model(path_amp)
                 self.model_amp = model_amp
 
-                path_tau = path + "pretrained_model/pretrained_model/Spectra_TA/resV2_TA_spectra_cosh_Tau"
+                path_tau = path + "/pretrained_model_TA/pretrained_model_TA/resV2_TA_spectra_cosh_Tau"
                 model_tau = tf.keras.models.load_model(path_tau)
                 self.model_tau = model_tau
 
         if selected_option == "Agarose Gel": # to change for the GEL path
 
             try:
-                path_model = path + "/pretrained_model/Gel/resV2_GEL_takemodel"
+                path_model = path + "/pretrained_model_Gel/pretrained_model_Gel/resV2_GEL_takemodel"
                 model_model = tf.keras.models.load_model(path_model, custom_objects={'top_3_acc':top_3_acc})
                 self.model_model = model_model
 
-                path_amp = path + "/pretrained_model/Gel/resV2_GEL_takespectra+dilat"
+                path_amp = path + "/pretrained_model_Gel/pretrained_model_Gel/resV2_GEL_takespectra+dilat"
                 model_amp = tf.keras.models.load_model(path_amp)
                 self.model_amp = model_amp
 
-                path_tau = path + "/pretrained_model/Gel/resV2_GEL_Tau(MSE)"
+                path_tau = path + "/pretrained_model_Gel/pretrained_model_Gel/resV2_GEL_Tau(MSE)"
                 model_tau = tf.keras.models.load_model(path_tau)
                 self.model_tau = model_tau
 
             except:
 
-                path_model = path + "pretrained_model/pretrained_model/Gel/resV2_GEL_takemodel"
+                path_model = path + "/pretrained_model_Gel/resV2_GEL_takemodel"
                 model_model = tf.keras.models.load_model(path_model, custom_objects={'top_3_acc':top_3_acc})
                 self.model_model = model_model
 
-                path_amp = path + "pretrained_model/pretrained_model/Gel/resV2_GEL_takespectra+dilat"
+                path_amp = path + "/pretrained_model_Gel/resV2_GEL_takespectra+dilat"
                 model_amp = tf.keras.models.load_model(path_amp)
                 self.model_amp = model_amp
 
-                path_tau = path + "pretrained_model/pretrained_model/Gel/resV2_GEL_Tau(MSE)"
+                path_tau = path + "/pretrained_model_Gel/resV2_GEL_Tau(MSE)"
                 model_tau = tf.keras.models.load_model(path_tau)
                 self.model_tau = model_tau
 
