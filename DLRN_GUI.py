@@ -350,7 +350,7 @@ class MyWindow(QMainWindow):
                             pre_amp, 
                             self.time, 
                             Kinetic_signal, data, Fit, score,
-                            true_amp, self.Kind_analysis)
+                            true_amp)
 
         Table_print(Tau_solutions, true_tau, self.kind_Top)
 
@@ -421,7 +421,7 @@ class MyWindow(QMainWindow):
                             top_3_indices, 
                             pre_amp, 
                             self.time, 
-                            Kinetic_signal, data, Fit, score, self.Kind_analysis)
+                            Kinetic_signal, data, Fit, score)
 
 
             residuals = data[0,:,:,0] - Fit[:,:]
@@ -439,3 +439,4 @@ if __name__ == "__main__":
     window = MyWindow()
     window.show()
     sys.exit(app.exec_())
+
