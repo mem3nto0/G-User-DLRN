@@ -60,7 +60,7 @@ def plotting_results(model_binary, pre_model, ind, top_3_indices, pre_amp, Time,
 
 def plotting_results_test(model_binary, pre_model, ind, top_3_indices, pre_amp, Time, Kinetic_signal, data, Fit, score, true_amp):
 
-    wl = Global_variable.wl
+    wl = np.arange(0,256,1)
 
     fig, axs = plt.subplots(1, 4,figsize=(10, 3), dpi=150, num="Solution {}".format(ind+1))
 
@@ -114,3 +114,4 @@ def plotting_results_test(model_binary, pre_model, ind, top_3_indices, pre_amp, 
     plt.show(block=False)
 
     plt.show()
+
