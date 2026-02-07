@@ -14,6 +14,8 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QLa
 from PyQt5.QtCore import Qt  # Import Qt module from PyQt5
 import PyQt5
 
+# === Interface for the DLRN Analysis ===
+
 class MyWindow(QMainWindow):
     def __init__(self):
         super().__init__()
